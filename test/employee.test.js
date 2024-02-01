@@ -120,7 +120,7 @@ describe('PUT /api/employees/:employeeId', function () {
             .send({
                 name: "Dimas",
                 position: "Direktur",
-                salary: "50 juta",
+                salary: "50 Juta",
                 email: "dimas.arbi_ti22@nusaputra.ac.id",
                 phone: "085872834600",
                 address: "Jl. Cisaat, Sukabumi"
