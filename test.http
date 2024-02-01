@@ -1,0 +1,97 @@
+POST http://localhost:3000/api/users
+Content-Type: application/json
+Accept: application/json
+
+{
+  "username" : "kelompok-3",
+  "password" : "rahasia",
+  "name" : "Dimas Arbi Ardian"
+}
+###
+
+POST http://localhost:3000/api/users/login
+Content-Type: application/json
+Accept: application/json
+
+{
+  "username" : "kelompok-3",
+  "password" : "rahasia"
+}
+
+###
+
+GET http://localhost:3000/api/users/current
+Content-Type: application/json
+Accept: application/json
+Authorization: d9c79cfe-ff8b-4ac8-9e55-95987f75bef5
+
+###
+
+PATCH http://localhost:3000/api/users/current
+Content-Type: application/json
+Accept: application/json
+Authorization: d9c79cfe-ff8b-4ac8-9e55-95987f75bef5
+
+{
+  "name" : "Dimas Ardian"
+}
+
+###
+
+DELETE http://localhost:3000/api/users/logout
+Content-Type: application/json
+Accept: application/json
+Authorization: d9c79cfe-ff8b-4ac8-9e55-95987f75bef5
+
+###
+
+POST http://localhost:3000/api/employees
+Content-Type: application/json
+Accept: application/json
+Authorization: d9c79cfe-ff8b-4ac8-9e55-95987f75bef5
+
+{
+  "name" : "Joko",
+  "position" : "Manager",
+  "salary" : "10 Juta",
+  "email" : "joko@gmail.com",
+  "phone" : "085714352614",
+  "address" : "Karawang"
+}
+
+###
+
+GET http://localhost:3000/api/employees
+Content-Type: application/json
+Accept: application/json
+Authorization: d9c79cfe-ff8b-4ac8-9e55-95987f75bef5
+
+###
+
+GET http://localhost:3000/api/employees/165
+Content-Type: application/json
+Accept: application/json
+Authorization: d9c79cfe-ff8b-4ac8-9e55-95987f75bef5
+
+### Update
+
+PUT http://localhost:3000/api/employees/165
+Content-Type: application/json
+Accept: application/json
+Authorization: d9c79cfe-ff8b-4ac8-9e55-95987f75bef5
+
+{
+  "name": "Dimas",
+  "position": "Direktur",
+  "salary": "50 juta",
+  "email": "dimas.arbi_ti22@nusaputra.ac.id",
+  "phone": "085872834600",
+  "address": "Jl. Cisaat, Sukabumi"
+}
+
+### Delete Employee
+
+DELETE http://localhost:3000/api/employees/165
+Content-Type: application/json
+Accept: application/json
+Authorization: d9c79cfe-ff8b-4ac8-9e55-95987f75bef5
