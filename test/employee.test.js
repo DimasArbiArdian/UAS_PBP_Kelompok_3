@@ -251,7 +251,7 @@ describe('GET /api/employees', function () {
         const result = await supertest(web)
             .get('/api/employees')
             .query({
-                name: "test1"
+                name: "test 1"
             })
             .set('Authorization', 'test');
 
@@ -285,14 +285,14 @@ describe('GET /api/employees', function () {
         const result = await supertest(web)
             .get('/api/employees')
             .query({
-                phone: "085872834600"
+                phone: "0858728346001"
             })
             .set('Authorization', 'test');
 
         logger.info(result.body);
 
         expect(result.status).toBe(200);
-        expect(result.body.data.length).toBe(8);
+        expect(result.body.data.length).toBe(6);
         expect(result.body.paging.page).toBe(1);
         expect(result.body.paging.total_page).toBe(1);
         expect(result.body.paging.total_item).toBe(6);
