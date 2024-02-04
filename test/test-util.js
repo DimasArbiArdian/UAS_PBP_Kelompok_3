@@ -59,7 +59,7 @@ export const createManyTestEmployees = async () => {
                 position: `test ${i}`,
                 salary: `test ${i}`,
                 email: `test${i}@nusaputra.ac.id`,
-                phone: `test${i}`,
+                phone: `085872834600${i}`,
                 address: `test${i}`
             }
         })
